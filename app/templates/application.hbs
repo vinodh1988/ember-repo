@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <LinkTo class="navbar-brand"  @route="index">My Solution</LinkTo>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <LinkTo class="nav-link" @route="index">Home</LinkTo>
+    </li>
+    <li class="nav-item">
+     <LinkTo class="nav-link" @route="about">about</LinkTo>
+    </li>
+    <li class="nav-item">
+    <LinkTo class="nav-link" @route="contact">Contact us</LinkTo>
+    </li>
+  </ul>
+</nav>
 {{outlet}}
