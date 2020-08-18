@@ -1,6 +1,10 @@
 <div>
     <h1> Our Services </h1>
-   <DataBox></DataBox>
-   <DataBox></DataBox>
-   <DataBox></DataBox>
+  <!-- <DataBox @title="Industries"></DataBox>
+   <DataBox @title="Software Products"></DataBox>
+   <DataBox @title="Technologies"></DataBox> -->
+
+     {{#each @model as |dataitem|}}
+         <DataBox @boxdata={{dataitem}} />
+     {{/each}}
 </div>

@@ -1,9 +1,9 @@
 <div class="box">
-    <h3>Title</h3>
+    <h4>{{@boxdata.title}}</h4>
     <hr>
     <ul>
-        <li>list1</li>
-        <li>list2</li>
-        <li>list3</li>
+     {{#each @boxdata.itemlist as |x|}}
+         <li>{{x}}</li>
+     {{/each}}
     </ul>
 </div>
