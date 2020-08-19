@@ -1,0 +1,14 @@
+{
+    "data": [
+    {"type": "indices", 
+      "id":1, 
+      "attributes" : {"title": "Industries" , "itemlist": ["Aviation","Hospitality","Health Care", "Finance"]}},
+      {"type": "indices", 
+        "id":2, 
+      "attributes" : {"title": "Software Products", "itemlist" : ["XYZ ERP","ABD Developer Studio","Code Max","DTD DB"]}},
+      {
+      "type": "indices", 
+      "id":3, 
+      "attributes" :{"title": "Technologies", "itemlist" :["Cloud Solution","Big Data Solution","Analytics"]}}
+   ]
+  }
