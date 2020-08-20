@@ -2,7 +2,8 @@
     height: 60px;
 }
 #main-container{
-    height: 500px;
+    height:500px;
+    overflow: scroll;
 }
 #footer{
     height: 60px;
@@ -35,4 +36,34 @@
 
 .address h3 {
     text-decoration: underline;
+}
+
+.person{
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    background-color: rgb(250, 244, 244);
+    border: 2px solid rgb(82, 79, 79);
+    box-sizing: border-box;
+}
+
+.box-left{
+    float: left;
+    width: 30%;
+    padding-top: 20%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.box-left img{
+    height: 60%;
+    width: 90%;
+}
+.box-right{
+    float: left;
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
 }

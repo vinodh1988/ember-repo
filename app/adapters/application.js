@@ -8,3 +8,14 @@ export default class ApplicationAdapter extends JSONAPIAdapter {
     }
   }
   
+
+
+  /*
+
+     host  -- http://localhos:3080/
+     namespace : api 
+ 
+     index  -indeces
+     dept - depts
+     buildUrl is not necassary if it is not file or if your are sticking to conventions
+*/
