@@ -9,6 +9,17 @@ export default class PeopleController extends Controller {
 
    @action
    performPost(){
-       console.log(name,position,pic)
+       console.log(this.name,this.position,this.pic)
+           
+       let post = this.store.createRecord('person', {
+           name : this.name,
+           position: this.position,
+           pic: this.pic
+       } );
+
+
+      post.save();  //this will create a post request to  http://localhost:4800/api/people
+
+
    }
 }
