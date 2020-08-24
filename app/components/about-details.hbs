@@ -1,6 +1,24 @@
  {{#if firstpage}}
    <div class ="page">
-       <p>page1 </p>
+       <p>
+           <h3> About us</h3>
+           Our Company is a great company.  Our Company is a great company.  Our Company is a great company.  Our Company is a great company.  Our Company is a great company.  
+           Our Company is a great company.  Our Company is a great company.   Our Company is a great company.  Our Company is a great company.  Our Company is a great company.  Our Company is a great company.  
+       </p>
+       Do you want to view General information ?
+       <select {{on "change" this.updateQuestion1}}>
+           <option>yes</option>
+           <option>no</option>
+       </select>
+
+       <br>
+
+       Do you want to view Recruiment information ?
+       <select {{on "change" this.updateQuestion2}}>
+           <option>yes</option>
+           <option>no</option>
+       </select>
+       <br>
        <button  {{on "click" this.performForward}}  class="btn btn-primary"> Continue Reading...!!!</button>
    </div>
 
@@ -8,7 +26,14 @@
 
  {{#if secondpage}}
   <div class ="page">
-       <p>page 2 </p>
+       <p> 
+           <h3>Bit more about us....</h3>
+           <ul>
+            {{#each this.questionList as |data|}}
+            <li> {{data.message}} </li>
+          {{/each}}
+           </ul>
+       </p>
       <button   {{on "click" this.performForward}} class="btn btn-primary"> Continue Reading...!!!</button>
       <button   {{on "click" this.performBackward}}  class="btn btn-primary"> Go back</button>
     </div>
@@ -16,7 +41,14 @@
 
 {{#if thirdpage}}
     <div class ="page">
-      <p>page 3 </p>
+      <p> 
+           <h3>Bit more about us....</h3>
+           <ul>
+            {{#each this.questionList as |data|}}
+            <li> {{data.message}} </li>
+          {{/each}}
+           </ul> 
+        </p>
     <button   {{on "click" this.performBackward}} class="btn btn-primary"> Go back</button>
     </div>
  {{/if}}
