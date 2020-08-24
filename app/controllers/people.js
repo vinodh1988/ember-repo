@@ -22,4 +22,9 @@ export default class PeopleController extends Controller {
 
 
    }
+
+   @action
+   temp(){
+       console.log("fired...!!!");
+   }
 }

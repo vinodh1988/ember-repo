@@ -18,5 +18,5 @@
 </form>
 </div>
   {{#each @model as |data|}}
-         <PersonBox @persondata={{data}} />
+         <PersonBox @persondata={{data}} @temp ={{this.temp}}/>
  {{/each}}
