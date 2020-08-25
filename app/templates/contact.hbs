@@ -1,6 +1,8 @@
 <h1>Our Offices</h1>
 <hr>
-
+{{outlet}}
+<hr>
    {{#each @model as |data|}}
-         <AddressBox @address={{data}} />
+        {{#link-to "contact.location" data.city}}   <AddressBox @address={{data}} /> {{/link-to}} 
     {{/each}}
+
